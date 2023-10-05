@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+.container_button {
+  width: fit-content;
+  padding: 16px 88px; 
+  background: #bf313d;
+  box-shadow: 4px 8px 0px #52181d;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: inline-flex;
+  position: absolute;
+  z-index: 2;
+  bottom: -2rem;
+}
+
+
+.button_start {
+  color: white;
+  font-size: 54px;
+  font-family: Luckiest Guy;
+  font-weight: 400;
+  word-wrap: break-word;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
