@@ -1,41 +1,14 @@
-"use client";
-import Image from "next/image";
-import * as io from "socket.io-client";
-import memes from '@/db/memes.json'
+import Memes from "./memes";
 
-const socket = io.connect(process.env.NEXT_PUBLIC_SERVER_URL, {
-  reconnection: true,
-  reconnectionAttempts: 5,
-  reconnectionDelay: 1000,
-});
+export default async function VotePage(){
 
-export default function VotePage(){
-
-  const handleVote = async (e, id) => {
-    e.preventDefault();
-
-    console.log("id: "+id);
-    socket.emit("vote", id);
-  }
+  const data = await fetch(`${process.env.BASE_URL}/api/list`,{
+    cache: "no-cache"
+  }).then(res => res.json())
 
   return (
     <>
-    
-    {
-      memes.map((e,index) => (
-        <button key={index} onClick={e => handleVote(e, index)}>
-          <Image
-            width={256.1}
-            height={512}
-            src={"/"+e.image}
-            alt={e.image}
-            priority
-            unoptimized
-          />
-        </button>
-      ))
-    }
-
+    <Memes data={data} />
     </>
   )
 }

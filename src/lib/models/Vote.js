@@ -10,6 +10,10 @@ export const VoteSchema = new Schema(
       type: String,
       default: "/img/bugsbunny.jpg"
     },
+    color: {
+      type: String,
+      default: "#ff0000"
+    },
     votes: {
       type: Number,
       required: true,

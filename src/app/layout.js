@@ -1,7 +1,8 @@
-import WarnerLogo from '@/components/Logo'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import Image from 'next/image'
+import { Header } from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,20 +24,16 @@ export const metadata = {
   }
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children}) {
   return (
     <html lang="es">
-      <body className={inter.className+ " max-w-screen-2xl mx-auto w-[95%]"}>
-        <header className='py-4 sticky top-0 backdrop-blur-md'>
-          <Link href="/">
-            <WarnerLogo styles={"w-[128px] lg:w-[256px]"}/>
-          </Link>
-        </header>
+      <body className={inter.className+ " max-w-screen-2xl mx-auto w-[90%] lg:w-[95%]"}>
+        <Header />
         <main>
         {children}
         </main>
-        <footer>
-          <span>Desarrollado por Alumnos de Pescar ~ Santader ©2023</span>
+        <footer className='py-4 font-medium'>
+          <span>© 2023 hecho con ❤️ por estudiantes de Pescar.</span>
         </footer>
       </body>
     </html>
