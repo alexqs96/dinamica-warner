@@ -38,6 +38,7 @@ export default function Agregar(){
   const handleSubmit = async (e) => {
     e.preventDefault()
     console.log("Subiendo...");
+    document.querySelector("button[type='submit']").textContent = "Subiendo..."
     const res = await fetch('/api/upload', {
       method: "POST",
       headers:{
@@ -54,7 +55,12 @@ export default function Agregar(){
     console.log(res.statusText);
 
     if(res.status === 200){
+      document.querySelector("button[type='submit']").textContent = "Subido :D"
       location.reload()
+    }
+    else
+    {
+      document.querySelector("button[type='submit']").textContent = "Publicar"
     }
   }
 
@@ -86,7 +92,7 @@ export default function Agregar(){
           <input type="color" onChange={e => setColor(e.target.value)}></input>
         </label>
 
-        <button className="bg-black text-white p-2 rounded-md">Publicar</button>
+        <button type="submit" className="bg-black text-white p-2 rounded-md">Publicar</button>
       </form>
     </>
   )

@@ -106,7 +106,7 @@ export const StatsBar = ({data}) => {
         {
           data?.image?.map((e, index) => (
             <Image
-              className="object-cover max-sm:w-14 w-48 rounded-lg"
+              className="object-cover max-sm:w-14 md:w-32 2xl:w-40 rounded-lg"
               key={index}
               src={e}
               width={100}

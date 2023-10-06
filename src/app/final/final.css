@@ -12,7 +12,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.container {
+.containerWarner {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -91,7 +91,7 @@
   text-align: center;
   transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 80px;
+  
   color: #fff;
   font-family: "Luckiest Guy";
   animation: pop-up 0.7s ease-out;
@@ -100,19 +100,23 @@
   -webkit-text-stroke-color: black;
 }
 .image_container {
-  height: 400px;
-  width: 400px;
-  margin-bottom: 4px;
+  max-width: 400px;
+  width: 90%;
+  height: fit-content;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  animation: pop-up 0.7s ease-out;
+  transition: all .5s;
 }
 
 .ThatsAllFolks {
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 85%;
   text-align: center;
   transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 80px;
   color: #fff;
   font-family: "Luckiest Guy";
   animation: pop-up 0.7s ease-out;
