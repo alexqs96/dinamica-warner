@@ -1,3 +1,9 @@
+.container_qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .qr {
   height: 640px;
@@ -18,7 +24,6 @@
   font-size: 64px;
   font-family: Luckiest Guy;
   font-weight: 400;
-  margin-top: 16px;
   margin-bottom: 16px;
   word-wrap: break-word;
   -webkit-text-stroke-width: 2px;
@@ -31,8 +36,6 @@
   font-size: 36px;
   font-family: Luckiest Guy;
   font-weight: 400;
-  margin-top: 32px;
-  margin-bottom: 16px;
   word-wrap: break-word;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
@@ -53,5 +56,5 @@
   height: 100%;
   text-align: center;
   color: black;
-  padding-bottom: 36px;
+
 }
