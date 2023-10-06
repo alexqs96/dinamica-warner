@@ -35,7 +35,7 @@ export default function RootLayout({ children}) {
         </main>
         <footer className='pt-6 pb-10 font-medium flex max-sm:flex-col justify-center items-center sm:justify-between gap-3'>
           <span className='text-center'>© 2023 hecho con ❤️ por estudiantes de Pescar.</span>
-          <WarnerLogo styles={"w-24 w-fit"}/>
+          <WarnerLogo styles={"w-16 w-fit"}/>
         </footer>
       </body>
     </html>
