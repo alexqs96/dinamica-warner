@@ -62,3 +62,35 @@ export async function POST(req){
     }) 
   }
 }
+
+export async function DELETE(req){
+  try {
+    const body = await req.json()
+
+    console.log("POST /delete");
+    await connectMongo();
+
+    const data = await Vote.findByIdAndDelete(body._id)
+
+    if (data) {
+      return NextResponse.json(data,{
+        status: 200,
+        statusText: "Meme Borrado"
+      })
+    }
+    else
+    {
+      return NextResponse.json(data,{
+        status: 400,
+        statusText: "Hubo un error al borrar"
+      })
+    }
+
+  } catch (error){
+    console.log("Hubo un error al conectar a MongoDB");
+    return NextResponse.json([],{
+      status: 500,
+      statusText: "Hubo un error en el servidor."
+    }) 
+  }
+}
