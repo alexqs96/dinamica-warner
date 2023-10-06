@@ -1,18 +1,10 @@
-import { Button_Start } from "@/components/Button/Button_start";
-import { StatsBar } from "@/components/Chart";
+"use client"
 import { Qr } from "@/components/Qr/Qr";
 
-export default async function Home() {
-
-  const data = await fetch(`${process.env.BASE_URL}/api/votes`,{
-    cache: "no-store"
-  }).then(res => res.json())
+export default function Home() {
 
   return (
     <>
-    <section className="">
-      <StatsBar data={data}/>
-    </section>
     <Qr/>
     </>
   )

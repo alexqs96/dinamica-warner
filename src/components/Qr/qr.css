@@ -1,5 +1,5 @@
 
-.container_qr {
+.qr {
   height: 640px;
   width: 600px;
   background-color: white;
@@ -10,7 +10,7 @@
   border-radius: 16px;
   z-index: 1;
   position: relative;
-  margin-bottom: 6rem;
+
 }
 
 .title {
@@ -18,7 +18,7 @@
   font-size: 64px;
   font-family: Luckiest Guy;
   font-weight: 400;
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 16px;
   word-wrap: break-word;
   -webkit-text-stroke-width: 2px;

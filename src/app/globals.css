@@ -31,16 +31,11 @@
 }
 
 html{
-    background-image: url("/img/landscape_first.jpg");
-    background-size: contain;
+    background-image: url("/img/landscape_first.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+

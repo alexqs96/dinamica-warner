@@ -1,0 +1,6 @@
+.container_stats{
+  background: linear-gradient(109deg, white 6%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  background: #ffffff79;
+}
