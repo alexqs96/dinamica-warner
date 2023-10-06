@@ -1,3 +1,11 @@
+
+.container_sec{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container_stats{
   background: linear-gradient(109deg, white 6%, rgba(217, 217, 217, 0) 100%);
   border-radius: 16px;

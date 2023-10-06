@@ -9,8 +9,11 @@ const Stats = async () => {
       }).then(res => res.json())
 
   return (
-    <section className="container_stats">
+
+    <section className='container_sec'>
+      <div className="container_stats">
       <StatsBar data={data}/>
+      </div>
     </section>
   )
 }
