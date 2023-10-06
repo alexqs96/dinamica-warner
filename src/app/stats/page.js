@@ -1,6 +1,5 @@
 import { StatsBar } from '@/components/Chart'
 import "./stats.css"
-import React from 'react'
 
 const Stats = async () => {
 
