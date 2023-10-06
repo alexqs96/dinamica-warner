@@ -17,12 +17,12 @@ const socket = io.connect(process.env.NEXT_PUBLIC_SERVER_URL, {
 export const StatsBar = ({data}) => {
   const router = useRouter()
   const dataValues = ({
-    labels: data.name,
+    labels: data?.name,
     datasets: [
       {
         label: "Votos",
-        data: data.votes,
-        backgroundColor: data.color,
+        data: data?.votes,
+        backgroundColor: data?.color,
       },
     ],
   })

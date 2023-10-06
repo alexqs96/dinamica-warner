@@ -10,6 +10,10 @@ const socket = io.connect(process.env.NEXT_PUBLIC_SERVER_URL, {
 
 export default function Memes({data}){
 
+  if (!data) {
+    return <p>No hay datos cargados.</p>
+  }
+
   const handleVote = async (e, id) => {
     e.preventDefault();
     console.log("Votaste: "+id);
@@ -28,10 +32,9 @@ export default function Memes({data}){
   }
 
   return (
-    <>
-    
+    <>    
     {
-      data.image.map((e,index) => (
+      data?.image?.map((e,index) => (
         <button key={index} onClick={e => handleVote(e, data?.ids[index])}>
           <Image
             width={256.1}

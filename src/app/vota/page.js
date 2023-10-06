@@ -1,4 +1,4 @@
-import Memes from "./memes";
+import Memes from "../../components/memes";
 
 export default async function VotePage(){
 
@@ -8,7 +8,7 @@ export default async function VotePage(){
 
   return (
     <>
-    <Memes data={data} />
+    <Memes data={data || []} />
     </>
   )
 }
