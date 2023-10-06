@@ -1,6 +1,7 @@
 
 .container_sec{
-    height: 80vh;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;

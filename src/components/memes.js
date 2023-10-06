@@ -32,11 +32,15 @@ export default function Memes({data}){
   }
 
   return (
-    <>    
+    <>
+    <h1 className="text-2xl lg:text-4xl font-semibold my-5 lucky text-center">Vota tu Meme Favorito!</h1>
+    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {
       data?.image?.map((e,index) => (
-        <button key={index} onClick={e => handleVote(e, data?.ids[index])}>
+        <button key={index} className="group overflow-hidden rounded-2xl relative" onClick={e => handleVote(e, data?.ids[index])}>
+          <span className="transition-all duration-300 opacity-0 group-hover:opacity-100 grid absolute h-full w-full bg-slate-100/50 inset-0 place-items-center text-5xl lucky">Votar</span>
           <Image
+            className="w-full h-[320px] object-cover"
             width={256.1}
             height={512}
             src={e}
@@ -47,7 +51,7 @@ export default function Memes({data}){
         </button>
       ))
     }
-
+    </div>
     </>
   )
 }

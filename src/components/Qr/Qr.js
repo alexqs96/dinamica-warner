@@ -5,15 +5,15 @@ import { Button_Start } from "../Button/Button_start";
 
 export const Qr = () => {
   return (
-    <div className="home_container">
-      <h1 className="title">¿Cómo la pasaste?</h1>
+    <div className="home_container max-w-2xl w-[95%] mx-auto mb-20 max-sm:mt-10">
+      <h1 className="title text-[2rem] lg:text-[4rem]">¿Cómo la pasaste?</h1>
       <div className="container_qr">
         <div className="qr">
-          <h2 className="subtitle">Tu voto nos importa</h2>
+          <h2 className="subtitle text-[1.5rem] lg:text-[3rem] text-center">Tu voto nos importa</h2>
           <div className="container_image">
             <QRCode styles={"w-full"} />
           </div>
-          <p className="text">Vota ingresando con el Qr</p>
+          <p className="text subtitle text-[1.5rem] lg:text-[2rem] text-center">Vota ingresando con el Qr</p>
           <Button_Start />
         </div>
       </div>

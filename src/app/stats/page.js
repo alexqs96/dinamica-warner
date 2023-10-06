@@ -14,8 +14,9 @@ const Stats = async () => {
 
   return (
 
-    <section className='container_sec'>
-      <div className="container_stats">
+    <section className='container_sec flex flex-col'>
+      <h1 className='lucky text-2xl lg:text-4xl text-center'>Los Memes mas votados</h1>
+      <div className="container_stats w-full xl:max-w-screen-xl">
       <StatsBar data={data}/>
       </div>
     </section>

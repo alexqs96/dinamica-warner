@@ -10,10 +10,9 @@ export function Header() {
   const [openMenu, setOpenMenu] = useState(false)
 
   const navigation = [
-    { name: 'Votar', href: '/vota' },
-    { name: 'Estadisticas', href: '/stats' },
+    { name: 'Jugar', href: '/vota' },
+    { name: 'Memes mas Votados', href: '/stats' },
     { name: 'Estudiantes', href: '/estudiantes' },
-    { name: 'Contacto', href: '/contacto' },
   ]
 
   return (
@@ -26,7 +25,7 @@ export function Header() {
               alt="Pescar Logo"
               width={128.1}
               height={64}
-              className="w-48"
+              className="w-48 object-contain"
               unoptimized
               priority
             />

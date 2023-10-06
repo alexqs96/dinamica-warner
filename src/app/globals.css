@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+.lucky{
+  color: white;
+  font-family: Luckiest Guy;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 
 /* Boton Hamburguesa */
 

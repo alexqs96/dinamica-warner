@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Header } from '@/components/Header'
+import { SantanderLogo } from '@/components/Logo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,8 +33,9 @@ export default function RootLayout({ children}) {
         <main>
         {children}
         </main>
-        <footer className='py-4 font-medium'>
-          <span>© 2023 hecho con ❤️ por estudiantes de Pescar.</span>
+        <footer className='pt-6 pb-10 font-medium flex max-sm:flex-col justify-center items-center sm:justify-between gap-3'>
+          <span className='text-center'>© 2023 hecho con ❤️ por estudiantes de Pescar.</span>
+          <SantanderLogo styles={"w-32 w-fit"}/>
         </footer>
       </body>
     </html>
