@@ -30,7 +30,20 @@ export default function EditMemes({data}){
     router.refresh();
   }
 
+  const resetStats = async (e) => {
+    e.preventDefault();
+    
+    const res = await fetch(`/api/list`,{
+      method: "POST",
+    })
+    
+    console.log("Reset POST: "+res.statusText);
+  }
+
   return (
+    <>
+    
+    <button onClick={resetStats} className="bg-black text-white p-2 rounded-md mx-auto my-5 block" >Resetear Estadisticas</button>
     <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
     {
       data?.image?.map((e,index) => (
@@ -48,7 +61,7 @@ export default function EditMemes({data}){
         </div>
       ))
     }
-
     </div>
+    </>
   )
 }

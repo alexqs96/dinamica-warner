@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import * as io from "socket.io-client";
+import toast, { Toaster } from 'react-hot-toast';
 
 const socket = io.connect(process.env.NEXT_PUBLIC_SERVER_URL, {
   reconnection: true,
@@ -27,12 +28,13 @@ export default function Memes({data}){
     })
 
     console.log("Voto POST: "+res.statusText);
-
+    toast.success("Gracias por tu Voto! ❤️")
     socket.emit("vote", id);
   }
 
   return (
     <>
+    <Toaster />
     <h1 className="text-2xl lg:text-4xl font-semibold my-5 lucky text-center">Vota tu Meme Favorito!</h1>
     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {
