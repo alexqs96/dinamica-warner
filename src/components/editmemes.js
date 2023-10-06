@@ -33,7 +33,7 @@ export default function EditMemes({data}){
   return (
     <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
     {
-      data.image.map((e,index) => (
+      data?.image?.map((e,index) => (
         <div key={index} className="relative w-full max-h-[256px]">
           <button className="absolute top-0 right-0 bg-red-500 p-3 text-white" onClick={x => handleVote(x, data.ids[index])}>X</button>
           <Image

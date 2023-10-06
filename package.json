@@ -15,19 +15,19 @@
     "mongoose": "^7.5.4",
     "next": "13.5.4",
     "papaparse": "^5.4.1",
-    "react": "^18",
+    "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18",
+    "react-dom": "^18.2.0",
     "socket.io-client": "^4.7.2"
   },
   "devDependencies": {
     "@types/react": "18.2.25",
-    "autoprefixer": "^10",
+    "autoprefixer": "^10.4.16",
     "bufferutil": "^4.0.7",
-    "eslint": "^8",
+    "eslint": "^8.50.0",
     "eslint-config-next": "13.5.4",
-    "postcss": "^8",
-    "tailwindcss": "^3",
-    "utf-8-validate": "^5.0.10"
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "utf-8-validate": "^6.0.3"
   }
 }
