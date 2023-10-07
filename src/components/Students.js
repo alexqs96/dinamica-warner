@@ -74,7 +74,7 @@ export default function Students({data, page}) {
     </section>
     <p className="text-center my-4 font-medium">Paginas</p>
     <div className="flex items-center gap-2 justify-center">
-    <button className={"py-2 px-3 rounded-lg text-white"+ (page+1 === 1? " font-bold bg-orange-600" : " bg-orange-500")} onClick={() => location.replace("/?page=1")}>1</button>
+    <button className={"py-2 px-3 rounded-lg text-white"+ (page+1 === 1? " font-bold bg-orange-600" : " bg-orange-500")} onClick={() => location.replace("?page=1")}>1</button>
     <button className={"py-2 px-3 rounded-lg text-white"+ (page+1 === 2? " font-bold bg-orange-600" : " bg-orange-500")} onClick={() => location.replace("?page=2")}>2</button>
     <button className={"py-2 px-3 rounded-lg text-white"+ (page+1 === 3? " font-bold bg-orange-600" : " bg-orange-500")} onClick={() => location.replace("?page=3")}>3</button>
     </div>
